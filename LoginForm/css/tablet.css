@@ -1,0 +1,12 @@
+body .box{
+    width: 90%;
+    padding: 40px;
+   
+    transform: translate(-50%,-50%);
+    background: rgb(226, 7, 7);
+    text-align: center;
+
+}
+body .box input[type="text"],
+body .box input[type="password"]{
+text-align: center;}

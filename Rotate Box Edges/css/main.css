@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans",sans-serif;
+}
+body{
+
+}
+body .container{
+    height: 100vh;
+    width: 1005;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}
+body .container .box{
+    width:10rem;
+    height: 10rem;
+    border: 10px solid rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+     border-top: 10px solid rgb(243, 7, 54);  /*burada uste atıyorum kenarlık gibi */
+    animation: border-animation 1000ms infinite linear;
+    /* burada kullanılan infinite sonsuz dönme linear ise duraksama yapmadan devam etmesi demek */
+}
+@keyframes border-animation {
+    0%{
+        transform:rotate(0deg)
+    }
+  
+    100%{
+        transform: rotate(360deg);
+    }
+}

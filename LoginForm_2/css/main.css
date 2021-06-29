@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    font-family: "Poppins",sans-serif;
+}
+body{
+    min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: #131418;
+}
+body .form{
+    position: relative;
+    width: 22rem;
+    padding: 40px 40px 60px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+    5px 5px 15px rgba(0, 0, 0, 0.5);
+                    
+}
+body .form h2{
+    color: #c7c7c7;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 2px;
+}
+.form .input{
+    text-align: left;
+    margin-top: 2rem;
+}
+.form .input .inputBox{
+    margin-top: 1.25rem;
+}
+.form .input .inputBox label{
+    display: block;
+    color: #868686;
+    font-size: 18px;
+    margin-bottom: 5px;
+    
+}
+.form .input .inputBox input{
+    width: 100%;
+    height: 60%;
+    background: #131418;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding:5px 15px;
+    color:#fff;
+    font-size: 18px;
+     color: #03a9f4;
+    box-shadow:inset -2px -2px 2px rgba(255, 255, 255, 0.1),
+    inset 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+.form .input .inputBox input[type="submit"]{
+    box-shadow: -2px -2px 2px rgba(255, 255, 255, 0.1),
+     2px 2px 6px rgba(0, 0, 0, 0.8);
+
+}
+.form .input .inputBox input[type="submit"]:active{
+    color:#006c9c;
+    box-shadow:inset -2px -2px 2px rgba(255, 255, 255, 0.1),
+     inset 2px 2px 6px rgba(0, 0, 0, 0.8);
+
+}
+.form .input .inputBox input::placeholder{
+    color: #555;
+    font-size: 1.1rem;
+}
+.form .forget{
+    padding-top: 1.5rem;
+    color: #555;
+}
+.form .forget a{
+    color: #ff0044;
+    text-decoration: none;
+}

@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans",sans-serif;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: grey;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .box{
+    width: 300px;
+    height: 300px;
+    transition: 300ms all;
+    position: relative;
+    cursor: pointer;
+}
+
+.container .box .load-more{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(25, 151, 57);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transition: 300ms all;
+    transform: rotateY(0deg);
+
+    /* burada ilk durum 0 derece gözükür uzerine gelindiğinde sen arka tarafı gösterme diyerek my work alanı çalıştırırlır.
+    ve ayrıca diğer durumda da ise 0 dereceden 180 dereceye cevrilir bu gizlenir bu sefer direk my work alanı çalıştırılır 
+    kı oradada durum aynı şekildedir */
+
+
+}
+.container .box .load-more h2{
+    text-transform: uppercase;
+
+}
+.container .box .load-more h2:before{
+    display: block;
+    content: "";
+    width: 110px;
+    height: 1px;
+    background-color: #000;
+    margin-bottom: 10px;
+
+
+}
+.container .box .load-more span{
+    text-transform: uppercase;
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    
+}
+
+.container .box .my-work{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(238, 76, 12);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transition: 300ms all;
+    transform: rotateY(180deg);
+
+
+}
+.container .box .my-work h2{
+    color:#fff;
+    text-transform: uppercase;
+
+}
+.container .box .my-work h2:before{
+    display: block;
+    content: "";
+    width: 11rem;
+    height: 1px;
+    background-color: #fff;
+    margin-bottom: 10px;
+
+
+}
+.container .box .my-work span{
+    text-transform: uppercase;
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    
+}
+.container .box:hover .my-work{
+    transform:perspective(300px) rotateY(0deg);
+}
+.container .box:hover .load-more{
+    transform:perspective(300px) rotateY(180deg);
+}

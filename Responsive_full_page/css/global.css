@@ -1,0 +1,122 @@
+  :root{
+      --body-color:#336ea2;
+  }
+  
+  /* Text */
+
+  .text-center{
+      text-align: center;
+  }
+     
+            /* Başlık */
+  .heading-small{
+      font-size: 1.25rem;
+      
+  }
+  .heading-medium{
+      font-size: 1.5rem;
+  }
+  .heading-big{
+      font-size: 1.75rem;
+  }
+
+        /* Colors */
+        .bg-dark-blue{
+            background: #062e51;
+        }
+        .bg-light-blue{
+            background: var(--body-color);
+        }
+
+        /* Container */
+        .container{
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* Buttons */
+        .btn{
+            margin-bottom: 0.5rem;
+            margin-top: 1.25rem;
+            padding:0.7rem 3rem;
+            border-radius: 7px;
+            letter-spacing: 0.5px;
+        }
+        .btn-primary{
+            background: #336ea2;
+
+        }
+        .btn-primary:hover{
+            color:#336ea2;
+            background: #fff;
+            border: 0.5px solid #336ea2;
+
+        }
+        .btn-dark{
+            background:#333;
+        }
+        .btn-dark:hover{
+            color:#333;
+            background: #fff;
+            border: 0.5px solid #333;
+        }
+        .btn-block{
+            width: 100%;
+            text-align: center;
+            font-size: 1rem;
+        } 
+        .btn-block:hover{
+            background: #336ea2
+        }
+        .container{
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+          /* Forms */
+
+          .form-group{
+              padding:0.25rem 0;    ;
+          }
+          .form-group label{
+              display: block;
+          }
+          .form-control{
+              width: 100%;
+              padding: 0.4rem;
+              font-size: 1rem;
+              resize: none;
+              border-radius: 6px;
+            
+          }
+          .form-control::placeholder{
+
+            font-size: 1rem;
+          
+          }
+          #contact .contact-form ul{
+              list-style-type: none;
+              display: flex;
+              align-self:  center;
+              margin-top: 1rem;
+
+          }
+          #contact .contact-form ul li a{
+              padding: 1rem;
+              font-size: 2rem;
+          }
+          #contact .contact-form ul li a:hover{
+              opacity: 0.8;
+          }
+
+
+        
+             
+
+      
+            
+            
+       
+
+
+
